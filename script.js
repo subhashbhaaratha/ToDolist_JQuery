@@ -1,6 +1,7 @@
 let newTask=$('#newTask')
 let ulTasks=$('#ulTasks')
 let addBtn= $('#addBtn')
+let resetBtn=$('#resetBtn')
 let deleteBtn= $('#deleteBtn')
 
 function addItem()
@@ -23,6 +24,9 @@ newTask.keypress((e)=>{
 })
  
 addBtn.click(addItem)
+resetBtn.click(()=>{
+    newTask.val('')
+})
 
   
 
